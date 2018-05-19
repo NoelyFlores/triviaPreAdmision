@@ -1,0 +1,101 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Trivia Bicolor <L> </title>
+		<script type="text/javascript" src="js/javaScritp.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="shortcut icon" type="image/x-icon" href="fotos/banderaico.ico">
+
+	</head>
+	<body>
+		<nav>
+			<img src="fotos/trivia2.png">
+			<h1>Triviando mi selección</h1>
+			<p >WELCOME:<span id="viewName"></span></p>
+		</nav>
+		<section>
+
+		<div id="nameTrivia">
+			<p>NOMBRE:</p><input type="text" id="nameUser" placeholder="ESCRIBE TU NOMBRE"><br>
+			<button id="empezar" class="enviarValor">EMPEZAR</button>
+
+		</div>
+		<div id="accesoTrivia" class="accesoTrivia">
+			<h2>¿LIST@ PARA JUGAR?</h2>
+			<button id="buttonCancelar" class="enviarValor" value="cancelar" style="background:#009688">NO! GRACIAS</button>
+			<button id="buttonContinuar" class="enviarValor" value="continuar">ACEPTAR</button>
+		</div>
+		<div >
+			<form id="trivia1">
+				<h2>PREGUNTA 1</h2>
+				<p class="pregunta">De las siguientes Alternativas:¿Qué país no clasificó al<strong> Mundial de Rusia 2018?</strong></p>
+				<p>1:	Chile </p>
+				<p>2: Marruecos</p>
+				<p>3: Costa Rica</p>
+				<input type="text" id="pregunta1" placeholder="ESCRIBE EL NUMERO">
+				<input type="button" id="preguntaUno" class="enviarValor"value="ENVIAR">
+			</form>
+		</div>
+		<div >
+			<form id="trivia2">
+				<h2>PREGUNTA 2</h2>
+				<img src="fotos/farfan.jpg" class="imagenIlustrativo">
+				<p class="pregunta">¿Cuál es el nombre completo de "Foquita" Farfán</p>
+				<input type="radio" name="pregunta2"  value="Jefferson Agustín Farfán Guadalupe"> Jefferson Agustín Farfán Guadalupe<br>
+				<input type="radio" name="pregunta2"  value="Agustín Jefferson Farfán Guadalupe"> Agustín Jefferson Farfán Guadalupe<br>
+				<input type="radio" name="pregunta2"  value="Jefferson Farfán Guadalupe"> Jefferson Farfán Guadalupe<br>
+				<input type="button" id="preguntaDos" class="enviarValor" value="ENVIAR">
+			</form>
+		</div>
+		<div >
+			<form id="trivia3">
+				<h2>PREGUNTA 3</h2>
+				<img src="fotos/paolo.jpg" class="imagenIlustrativo">
+				<p class="pregunta">En la actualidad, ¿En qué club deportivo juega el delantero peruano Paolo Guerrero? </p>
+				<input type="radio" name="pregunta3" value="1"> Corinthians<br>
+				<input type="radio" name="pregunta3" value="2"> Flamengo<br>
+				<input type="radio" name="pregunta3" value="3"> Boca Juniors<br>
+				<input type="button" id="preguntaTres" class="enviarValor" value="ENVIAR">
+			</form>
+
+		</div>
+		<div>
+			<form id="trivia4">
+				<h2>PREGUNTA 4</h2>
+				<p class="pregunta" >¿Cuántas veces la seleción peruana clasificó al Mundial?</p>
+				<input type="radio" name="pregunta4" value="1"> Tres veces<br>
+				<input type="radio" name="pregunta4" value="2"> Cuatro veces<br>
+				<input type="radio" name="pregunta4" value="3"> Cinco veces<br>
+				<input type="button" id="preguntaCuatro" class="enviarValor" value="ENVIAR" >
+			</form>
+
+		</div>
+		<div id="triviaCancelado">
+			<img src="fotos/triste.png" class="imagenCancelado">
+			<p id="notificacion"></p>
+		</div>
+		<div id="resultado">
+			<h2>Tabla de Resultados</h2>
+			<div >
+				<div id="listaCorrecta">
+					<h3>Correctas<h3><p id="respuestaCorrecta" ></p>
+				</div>
+				<div id="listaIncorrecta">
+					<h3>Incorrectas</h3><p id="respuestaIncorrecta"></p>
+				</div  >
+				<div id="calificacion"></div>
+
+
+			</div>
+		</div>
+
+
+		</section>
+		<footer>
+			<p>© Diseñado por <a target="_blank" href="https://es-la.facebook.com/">Jessica Poves</a> y <a target="_blank" href="https://es-la.facebook.com/">Noely Flores</a> </p>
+
+		</footer>
+	</body>
+
+
+</html>
